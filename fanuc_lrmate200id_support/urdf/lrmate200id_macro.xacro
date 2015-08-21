@@ -4,7 +4,7 @@
   <xacro:include filename="$(find fanuc_resources)/urdf/common_constants.xacro"/>
   <xacro:include filename="$(find fanuc_lrmate200id_support)/urdf/lrmate200id.gazebo.xacro"/>
   <xacro:include filename="$(find fanuc_lrmate200id_support)/urdf/lrmate200id.transmission.xacro"/>
-  <xacro:include filename="$(find uos_common_urdf)/common.xacro"/>
+  <!--<xacro:include filename="$(find uos_common_urdf)/common.xacro"/>-->
 
   <xacro:macro name="fanuc_lrmate200id" params="prefix">
     <link name="${prefix}base_link">
@@ -21,7 +21,12 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/base_link.stl"/>
         </geometry>
       </collision>
-      <xacro:box_inertial x="0.19" y=".19" z=".17" mass="4" />
+      <!--<xacro:box_inertial x="0.19" y=".19" z=".17" mass="4" />-->
+      <inertial>
+        <mass value="4"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.021666658" ixy="0.0" ixz="0.0" iyy="0.021666658" iyz="0.0" izz="0.02406665704"/>
+      </inertial>
     </link>
     <link name="${prefix}link_1">
       <visual>
@@ -37,7 +42,12 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_1.stl"/>
         </geometry>
       </collision>
-      <xacro:box_inertial x="0.14" y=".22" z=".22" mass="4" />
+      <!--<xacro:box_inertial x="0.14" y=".22" z=".22" mass="4" />-->
+      <inertial>
+        <mass value="4"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.03226665376" ixy="0.0" ixz="0.0" iyy="0.0226666576" iyz="0.0" izz="0.0226666576"/>
+      </inertial>
     </link>
     <link name="${prefix}link_2">
       <visual>
@@ -53,7 +63,12 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_2.stl"/>
         </geometry>
       </collision>
-      <xacro:box_inertial x="0.14" y=".20" z=".44" mass="5" />
+      <!--<xacro:box_inertial x="0.14" y=".20" z=".44" mass="5" />-->
+      <inertial>
+        <mass value="5"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.0973332944" ixy="0.0" ixz="0.0" iyy="0.0888332978" iyz="0.0" izz="0.0248333234"/>
+      </inertial>
     </link>
     <link name="${prefix}link_3">
       <visual>
@@ -69,7 +84,12 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_3.stl"/>
         </geometry>
       </collision>
-      <xacro:box_inertial x="0.14" y=".12" z=".13" mass="4" />
+      <!--<xacro:box_inertial x="0.14" y=".12" z=".13" mass="4" />-->
+      <inertial>
+        <mass value="4"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.01043332916" ixy="0.0" ixz="0.0" iyy="0.0121666618" iyz="0.0" izz="0.0113333288"/>
+      </inertial>
     </link>
     <link name="${prefix}link_4">
       <visual>
@@ -85,7 +105,12 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_4.stl"/>
         </geometry>
       </collision>
-      <xacro:box_inertial x="0.28" y=".10" z=".10" mass="5" />
+      <!--<xacro:box_inertial x="0.28" y=".10" z=".10" mass="5" />-->
+      <inertial>
+        <mass value="5"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.00833333" ixy="0.0" ixz="0.0" iyy="0.0368333186" iyz="0.0" izz="0.0368333186"/>
+      </inertial>
     </link>
     <link name="${prefix}link_5">
       <visual>
@@ -101,7 +126,12 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_5.stl"/>
         </geometry>
       </collision>
-      <xacro:box_inertial x="0.11" y=".09" z=".08" mass="1.5" />
+      <!--<xacro:box_inertial x="0.11" y=".09" z=".08" mass="1.5" />-->
+      <inertial>
+        <mass value="1.5"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="0.001812499275" ixy="0.0" ixz="0.0" iyy="0.002312499075" iyz="0.0" izz="0.00252499899"/>
+      </inertial>
     </link>
     <link name="${prefix}link_6">
       <visual>
@@ -117,7 +147,12 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_6.stl"/>
         </geometry>
       </collision>
-      <xacro:box_inertial x="0.01" y=".04" z=".04" mass=".25" />
+      <!--<xacro:box_inertial x="0.01" y=".04" z=".04" mass=".25" />-->
+      <inertial>
+        <mass value="0.25"/>
+        <origin xyz="0 0 0"/>
+        <inertia ixx="6.666664e-05" ixy="0.0" ixz="0.0" iyy="3.54166525e-05" iyz="0.0" izz="3.54166525e-05"/>
+      </inertial>
     </link>
     <link name="${prefix}tool0" />
 
