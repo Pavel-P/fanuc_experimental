@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:macro name="fanuc_gazebo" params="prefix">
+        <gazebo>
+            <plugin name="fanuc_hw" filename="libgazebo_ros_control.so">
+                <robotNamespace>${prefix}</robotNamespace>
+                <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+            </plugin>
+        </gazebo>
+
+        <gazebo reference="${prefix}base_link">
+            <gravity>true</gravity>
+            <material>Gazebo/Grey</material>
+        </gazebo>
+        <gazebo reference="${prefix}link_1">
+            <gravity>true</gravity>
+            <material>Gazebo/Yellow</material>
+        </gazebo>
+        <gazebo reference="${prefix}link_2">
+            <gravity>true</gravity>
+            <material>Gazebo/Yellow</material>
+        </gazebo>
+        <gazebo reference="${prefix}link_3">
+            <gravity>true</gravity>
+            <material>Gazebo/Yellow</material>
+        </gazebo>
+        <gazebo reference="${prefix}link_4">
+            <gravity>true</gravity>
+            <material>Gazebo/Yellow</material>
+        </gazebo>
+        <gazebo reference="${prefix}link_5">
+            <gravity>true</gravity>
+            <material>Gazebo/Yellow</material>
+        </gazebo>
+        <gazebo reference="${prefix}link_6">
+            <gravity>true</gravity>
+            <material>Gazebo/Black</material>
+        </gazebo>
+    </xacro:macro>
+
+</robot>
