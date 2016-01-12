@@ -4,6 +4,10 @@
   <xacro:include filename="$(find fanuc_resources)/urdf/common_constants.xacro"/>
   <xacro:include filename="$(find fanuc_lrmate200id_support)/urdf/lrmate200id.gazebo.xacro"/>
   <xacro:include filename="$(find fanuc_lrmate200id_support)/urdf/lrmate200id.transmission.xacro"/>
+<<<<<<< HEAD
+=======
+  <!--<xacro:include filename="$(find uos_common_urdf)/common.xacro"/>-->
+>>>>>>> a1d9874fefe72b122c0dea4922a76058cf184b9e
 
   <xacro:macro name="fanuc_lrmate200id" params="prefix">
     <link name="${prefix}base_link">
@@ -20,6 +24,10 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/base_link.stl"/>
         </geometry>
       </collision>
+<<<<<<< HEAD
+=======
+      <!--<xacro:box_inertial x="0.19" y=".19" z=".17" mass="4" />-->
+>>>>>>> a1d9874fefe72b122c0dea4922a76058cf184b9e
       <inertial>
         <mass value="4"/>
         <origin xyz="0 0 0"/>
@@ -40,6 +48,10 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_1.stl"/>
         </geometry>
       </collision>
+<<<<<<< HEAD
+=======
+      <!--<xacro:box_inertial x="0.14" y=".22" z=".22" mass="4" />-->
+>>>>>>> a1d9874fefe72b122c0dea4922a76058cf184b9e
       <inertial>
         <mass value="4"/>
         <origin xyz="0 0 0"/>
@@ -60,6 +72,10 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_2.stl"/>
         </geometry>
       </collision>
+<<<<<<< HEAD
+=======
+      <!--<xacro:box_inertial x="0.14" y=".20" z=".44" mass="5" />-->
+>>>>>>> a1d9874fefe72b122c0dea4922a76058cf184b9e
       <inertial>
         <mass value="5"/>
         <origin xyz="0 0 0"/>
@@ -80,6 +96,10 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_3.stl"/>
         </geometry>
       </collision>
+<<<<<<< HEAD
+=======
+      <!--<xacro:box_inertial x="0.14" y=".12" z=".13" mass="4" />-->
+>>>>>>> a1d9874fefe72b122c0dea4922a76058cf184b9e
       <inertial>
         <mass value="4"/>
         <origin xyz="0 0 0"/>
@@ -100,6 +120,10 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_4.stl"/>
         </geometry>
       </collision>
+<<<<<<< HEAD
+=======
+      <!--<xacro:box_inertial x="0.28" y=".10" z=".10" mass="5" />-->
+>>>>>>> a1d9874fefe72b122c0dea4922a76058cf184b9e
       <inertial>
         <mass value="5"/>
         <origin xyz="0 0 0"/>
@@ -120,6 +144,10 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_5.stl"/>
         </geometry>
       </collision>
+<<<<<<< HEAD
+=======
+      <!--<xacro:box_inertial x="0.11" y=".09" z=".08" mass="1.5" />-->
+>>>>>>> a1d9874fefe72b122c0dea4922a76058cf184b9e
       <inertial>
         <mass value="1.5"/>
         <origin xyz="0 0 0"/>
@@ -140,6 +168,10 @@
           <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/collision/link_6.stl"/>
         </geometry>
       </collision>
+<<<<<<< HEAD
+=======
+      <!--<xacro:box_inertial x="0.01" y=".04" z=".04" mass=".25" />-->
+>>>>>>> a1d9874fefe72b122c0dea4922a76058cf184b9e
       <inertial>
         <mass value="0.25"/>
         <origin xyz="0 0 0"/>
